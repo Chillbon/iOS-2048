@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,6 +34,7 @@
 		1A34882518E169AA00D021C3 /* F3HScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A34882418E169AA00D021C3 /* F3HScoreView.m */; };
 		1A34882818E1713E00D021C3 /* F3HControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A34882718E1713E00D021C3 /* F3HControlView.m */; };
 		1A92D000191A016600E35C6C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A92CFFF191A016600E35C6C /* QuartzCore.framework */; };
+		1EFCCEF122073801003A414B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFCCEF022073801003A414B /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		1A34882618E1713E00D021C3 /* F3HControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F3HControlView.h; path = Views/F3HControlView.h; sourceTree = "<group>"; };
 		1A34882718E1713E00D021C3 /* F3HControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F3HControlView.m; path = Views/F3HControlView.m; sourceTree = "<group>"; };
 		1A92CFFF191A016600E35C6C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1EFCCEF022073801003A414B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				1A3487C818DEAD6E00D021C3 /* F3HViewController.h */,
 				1A3487C918DEAD6E00D021C3 /* F3HViewController.m */,
 				1A3487CB18DEAD6E00D021C3 /* Images.xcassets */,
+				1EFCCEF022073801003A414B /* Launch Screen.storyboard */,
 				1A3487B718DEAD6E00D021C3 /* Supporting Files */,
 				1A3487FF18E1461F00D021C3 /* Models */,
 				1A34880018E1463E00D021C3 /* Views */,
@@ -278,16 +281,15 @@
 				LastUpgradeCheck = 1010;
 				TargetAttributes = {
 					1A3487AC18DEAD6E00D021C3 = {
-						DevelopmentTeam = G6ER8D8YD6;
+						DevelopmentTeam = GYV39WAN3G;
 					};
 					1A3487D018DEAD6E00D021C3 = {
-						DevelopmentTeam = G6ER8D8YD6;
 						TestTargetID = 1A3487AC18DEAD6E00D021C3;
 					};
 				};
 			};
 			buildConfigurationList = 1A3487A818DEAD6E00D021C3 /* Build configuration list for PBXProject "NumberTileGame" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -312,6 +314,7 @@
 			files = (
 				1A3487CC18DEAD6E00D021C3 /* Images.xcassets in Resources */,
 				1A3487C418DEAD6E00D021C3 /* Main_iPhone.storyboard in Resources */,
+				1EFCCEF122073801003A414B /* Launch Screen.storyboard in Resources */,
 				1A3487BB18DEAD6E00D021C3 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -491,7 +494,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -508,10 +511,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NumberTileGame/NumberTileGame-Prefix.pch";
 				INFOPLIST_FILE = "NumberTileGame/NumberTileGame-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "chillbon.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -526,10 +530,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NumberTileGame/NumberTileGame-Prefix.pch";
 				INFOPLIST_FILE = "NumberTileGame/NumberTileGame-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "chillbon.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -550,6 +555,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "NumberTileGameTests/NumberTileGameTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -569,6 +575,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NumberTileGame/NumberTileGame-Prefix.pch";
 				INFOPLIST_FILE = "NumberTileGameTests/NumberTileGameTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
